@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChezElle Intranet</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+
+  <header class="main-header">
+    <div class="logo">
+      
+      <img src="ChezElle Logo.jpg" alt="ChezElle" height="40" />
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Chats</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">File</a></li>
+        <li><a href="#">Sign in</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+
+  
+  <!-- Welcome message -->
+<div id="welcome-message" class="welcome-box"></div>
+<!-- Assistant button -->
+<div class="assistant-icon" id="assistantToggle" title="Need help?">🤖</div>
+
+<!-- Assistant window -->
+<div class="assistant-panel" id="assistantPanel">
+  <h3>Virtual Assistant</h3>
+  <p>Hello! How can I assist you today?</p>
+  <ul>
+    <li>📁 Access internal documents</li>
+    <li>📞 Contact Human Resources</li>
+    <li>🕑 View my schedule</li>
+  </ul>
+</div>
+
+  <section class="news-section">
+  <h2 class="section-title">Company News Highlights</h2>
+  
+  <div class="news-grid">
+    <article class="news-card">
+      <img src="pexels-rdne-stock-project-758112.jpg" alt="Team Collaboration">
+      <h3>Cross-Team Collaboration Initiative Launched</h3>
+      <p>Departments are joining forces to enhance synergy and product delivery across verticals.</p>
+    </article>
+
+    <article class="news-card">
+      <img src="pexels-vlada-karpovich-4050345.jpg" alt="Employee Wellness">
+      <h3>Employee Wellness Program Expanded</h3>
+      <p>New mental health resources and personalized coaching plans are now available.</p>
+    </article>
+
+    <article class="news-card">
+      <img src="network-782707_1280.png" alt="Tech Recognition">
+      <h3>Company Receives AI Innovation Award</h3>
+      <p>Our team was honored for pioneering machine learning in financial user experiences.</p>
+    </article>
+
+    <article class="news-card">
+      <img src="pexels-quintin-gellar-696205 (1).jpg" alt="Sustainability">
+      <h3>Eco-Conscious Workspaces Piloted</h3>
+      <p>Green architecture and energy-efficient systems are being deployed across offices.</p>
+    </article>
+
+  </div>
+</section>
+
+  
+  
+ 
+
+  <section class="timeline" id="timeline">
+    <div class="event past" onclick="showPopup('2010: Company Founded with a vision rooted in tradition.')">
+      2010<br />Founding
+    </div>
+    <div class="event past" onclick="showPopup('2015: Expanded to 3 countries and honored African cultural heritage in design.')">
+      2015<br />Growth
+    </div>
+    <div class="event present" onclick="showPopup('2025: Launch of Sankofa Intranet and digital memory platform.')">
+      2025<br />Now
+    </div>
+    <div class="event future" onclick="showPopup('2030: Goal to be a global reference in culture-driven enterprise.')">
+      2030<br />Vision
+    </div>
+    <div class="event future" onclick="showPopup('2040: Launch of ChezElle AI, an African-rooted ethical assistant.')">
+      2040<br />ChezElle AI
+    </div>
+  </section>
+
+  <section class="carousel">
+    <h2>Archive Highlights</h2>
+    <div class="carousel-track">
+      <img src="pexels-andrea-piacquadio-3760093.jpg" alt="2010 Archive 1">
+      <img src="pexels-andrea-piacquadio-3860775.jpg" alt="2015 Archive 2">
+      <img src="pexels-karolina-grabowska-4491443.jpg" alt="2025 Archive 3">
+      <img src="pexels-ketut-subiyanto-4559597.jpg" alt="2030 Archive 4">
+      <img src="pexels-tiger-lily-7108593.jpg" alt="Archive 5">
+    </div>
+  </section>
+
+  <div id="popup" class="popup" style="display: none;">
+    <div id="popupContent"></div>
+    <button onclick="closePopup()">Close</button>
+  </div>
+
+  <footer>
+    &copy; 2025 ChezElle Intranet – Powered by culture and technology
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
